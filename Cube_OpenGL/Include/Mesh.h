@@ -1,5 +1,5 @@
 #pragma once
-#include "Include/Group.h"
+#include "Group.h"
 #include <vector>
 #include <string>
 #include <glm/glm.hpp>
@@ -14,10 +14,10 @@ using namespace std;
 
 class Mesh {
 	public:
-		Mesh(string filename);
+		Mesh(vector <string> filename);
+
 		vector <Group*> groups;
 		vector <glm::vec3*> vertex;
 		vector <glm::vec3*> normals;
 		vector <glm::vec2*> mappings;
-
 };
